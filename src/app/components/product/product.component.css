@@ -1,0 +1,36 @@
+.product-container {
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.product-image img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+.product-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #6742ee;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #805ff6;
+}

@@ -1,0 +1,11 @@
+<div class="product-container">
+  <div class="product-image">
+    <img [src]="productData.thumbnail" alt="Product Image" />
+  </div>
+  <div class="product-details">
+    <h3 class="product-title">{{ productData.title }}</h3>
+    <br />
+    <p class="product-price">Price: {{ productData.price | currency : "$" }}</p>
+    <button routerLink="/product/{{ productData.id }}">Details</button>
+  </div>
+</div>

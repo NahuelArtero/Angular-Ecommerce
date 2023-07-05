@@ -1,0 +1,16 @@
+<div class="product-container" *ngIf="loading">
+  Loading...
+</div>
+
+<div class="product-container" *ngIf="!loading">
+  <img class="product-image" [src]="product.thumbnail" alt="Product Image" />
+  <div class="product-details">
+    <h1 class="product-title">{{ product.title }}</h1>
+    <p class="product-price"> price {{ product.price | currency : "$" }}</p>
+    <p class="product-description">{{ description }}</p>
+    <div class="button-container">
+      <button (click)="goBack()"> < Back</button>
+      <button (click)="buyProduct()"> Buy </button>
+    </div>
+  </div>
+</div>

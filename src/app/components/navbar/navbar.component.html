@@ -1,0 +1,12 @@
+<mat-toolbar class="navbar">
+    <div class="navbar-title" routerLink="/">E-Commerce</div>
+    <!-- <div class="search-container">
+      <app-input-search></app-input-search>
+    </div> -->
+    <div class="navbar-links">
+      <span routerLink="/">Home</span>
+      <span routerLink="register" *ngIf="!isLogin">Register</span>
+      <span routerLink="login" *ngIf="!isLogin">Login</span>
+      <span (click)="logout()" *ngIf="isLogin">Logout</span>
+    </div>
+  </mat-toolbar>

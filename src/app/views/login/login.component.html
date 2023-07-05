@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="form-wrapper">
+      <h1 class="form-title">Login</h1>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="mat-form-field">
+            <label> Email </label>
+            <input
+              type="email"
+              formControlName="email"
+              placeholder="user@mail.com"
+            />
+          </div>
+          <div class="mat-form-field">
+            <label> Password </label>
+            <input
+              type="password"
+              formControlName="password"
+              placeholder="*******"
+            />
+          </div>
+          <button type="submit" [disabled]="loginForm.invalid" class="mat-button" >Submit</button>
+        </form>
+      </div>
+    </div>
